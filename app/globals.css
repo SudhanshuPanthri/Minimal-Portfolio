@@ -894,3 +894,238 @@ footer {
     font-size: 1.2rem;
   }
 }
+
+/* ============================================================
+   Images inside media surfaces
+   ============================================================ */
+img.art,
+.media-img {
+  object-fit: cover;
+  object-position: top center;
+  background: #0c0c0c;
+}
+
+/* ============================================================
+   Work list — project index cards (link to project pages)
+   ============================================================ */
+.work-list {
+  display: flex;
+  flex-direction: column;
+}
+.work-card {
+  border-bottom: var(--border-1);
+}
+.work-card-link {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 56px;
+  align-items: center;
+  padding: 56px 0;
+}
+.work-card-body {
+  order: 1;
+}
+.work-card-media {
+  order: 2;
+  position: relative;
+  aspect-ratio: 16 / 10;
+  border: var(--border-1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.work-card-media .art {
+  position: absolute;
+  inset: 0;
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.work-card-link:hover .work-card-media .art {
+  transform: scale(1.04);
+}
+.work-card .work-header {
+  margin-bottom: 10px;
+}
+.work-card .work-header h3 {
+  font-size: clamp(2rem, 4.5vw, 3.4rem);
+  transition: color 0.25s ease;
+}
+.work-card-link:hover .work-header h3 {
+  color: #fff;
+}
+.work-card-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--grey-400);
+  margin: 16px 0 22px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.work-card-cta {
+  display: inline-block;
+  margin-top: 6px;
+  font-family: var(--monospace);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.78em;
+  color: var(--color-headings);
+  transition: transform 0.25s ease;
+}
+.work-card-link:hover .work-card-cta {
+  transform: translateX(6px);
+}
+
+/* ============================================================
+   Project page
+   ============================================================ */
+.project-page {
+  padding: 0 var(--margin) 120px;
+}
+.project-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26px 0;
+  border-bottom: var(--border-1);
+  font-family: var(--monospace);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.78em;
+}
+.project-topbar .back-link {
+  color: var(--grey-400);
+  transition: color 0.2s ease;
+}
+.project-topbar .back-link:hover {
+  color: var(--color-headings);
+}
+.project-topbar .project-brand {
+  color: var(--color-headings);
+}
+.project-hero {
+  padding: 72px 0 44px;
+}
+.project-index {
+  font-family: var(--monospace);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.72em;
+  color: var(--grey-400);
+}
+.project-hero h1 {
+  font-family: var(--display);
+  text-transform: uppercase;
+  font-size: clamp(3rem, 11vw, 8.5rem);
+  line-height: 0.88;
+  color: var(--color-headings);
+  margin: 14px 0 22px;
+  letter-spacing: 0.01em;
+}
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  font-family: var(--monospace);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.82em;
+  color: var(--grey-500);
+}
+.project-media {
+  margin: 8px 0 72px;
+}
+.media-stage-lg {
+  aspect-ratio: 16 / 9;
+}
+.project-detail {
+  display: grid;
+  grid-template-columns: 1.55fr 0.75fr;
+  gap: 64px;
+  align-items: start;
+}
+.project-overview h2 {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  color: var(--color-headings);
+  margin-bottom: 20px;
+}
+.project-overview > p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--color-text);
+  margin-bottom: 34px;
+  max-width: 62ch;
+}
+.project-side {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-left: var(--border-1);
+  padding-left: 40px;
+}
+.project-side-block h3 {
+  font-family: var(--monospace);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.72em;
+  color: var(--grey-400);
+  margin-bottom: 12px;
+}
+.project-side-block p {
+  color: var(--color-headings);
+  font-size: 0.95rem;
+}
+.project-next {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 96px;
+  padding-top: 40px;
+  border-top: var(--border-1);
+  font-family: var(--display);
+  text-transform: uppercase;
+  font-size: clamp(1.6rem, 5vw, 3.4rem);
+  line-height: 0.95;
+  color: var(--grey-400);
+  transition: color 0.25s ease;
+}
+.project-next:hover {
+  color: var(--color-headings);
+}
+.project-next span:first-child {
+  font-family: var(--monospace);
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  color: var(--grey-400);
+  align-self: center;
+}
+
+/* Work list + project page — responsive */
+@media only screen and (max-width: 900px) {
+  .work-card-link {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .work-card-media {
+    order: 0;
+  }
+  .work-card-body {
+    order: 1;
+  }
+  .project-detail {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .project-side {
+    border-left: none;
+    padding-left: 0;
+    border-top: var(--border-1);
+    padding-top: 32px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 28px 48px;
+  }
+  .media-stage-lg {
+    aspect-ratio: 16 / 10;
+  }
+}

@@ -98,9 +98,16 @@ export const projects: Project[] = [
     description:
       "A portfolio analytics platform that sees what broker apps can't: multi-broker imports with format auto-detection, live NSE/BSE pricing and mutual-fund NAVs, FIFO/XIRR analytics, capital-gains tax intelligence, and an AI insights engine that escalates from rule-based analysis up to Claude.",
     tags: ["Next.js 16", "React 19", "TypeScript", "Prisma", "Tailwind", "Claude"],
-    art: "art-1",
-    media: ["art-1", "art-4", "art-6"],
+    art: "/projects/wealthlens/ai-insights.png",
+    media: [
+      "/projects/wealthlens/ai-insights.png",
+      "/projects/wealthlens/transactions.png",
+      "/projects/wealthlens/watchlist.png",
+      "/projects/wealthlens/stock-detail.png",
+      "/projects/wealthlens/import.png",
+    ],
     links: [
+      { label: "Live ↗", href: "https://wealth-lens-one.vercel.app/" },
       { label: "GitHub ↗", href: "https://github.com/SudhanshuPanthri/WealthLens" },
     ],
   },
