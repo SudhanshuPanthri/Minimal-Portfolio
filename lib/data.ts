@@ -93,18 +93,19 @@ export const projects: Project[] = [
   {
     id: "wealthlens",
     title: "WealthLens",
-    year: "2025",
+    year: "2026",
     role: "Solo · Full-stack",
     description:
       "A portfolio analytics platform that sees what broker apps can't: multi-broker imports with format auto-detection, live NSE/BSE pricing and mutual-fund NAVs, FIFO/XIRR analytics, capital-gains tax intelligence, and an AI insights engine that escalates from rule-based analysis up to Claude.",
     tags: ["Next.js 16", "React 19", "TypeScript", "Prisma", "Tailwind", "Claude"],
-    art: "/projects/wealthlens/ai-insights.png",
+    art: "/projects/wealthlens/dashboard.png",
     media: [
-      "/projects/wealthlens/ai-insights.png",
+      "/projects/wealthlens/dashboard.png",
       "/projects/wealthlens/transactions.png",
       "/projects/wealthlens/watchlist.png",
       "/projects/wealthlens/stock-detail.png",
       "/projects/wealthlens/import.png",
+      "/projects/wealthlens/ai-insights.png"
     ],
     links: [
       { label: "Live ↗", href: "https://wealth-lens-one.vercel.app/" },
@@ -114,7 +115,7 @@ export const projects: Project[] = [
   {
     id: "code-forge",
     title: "Code Forge",
-    year: "2025",
+    year: "2026",
     role: "Platform · Backend + Blazor",
     description:
       "A production-grade code-generation platform that forges entire backend layers automatically — data models, DbContexts, GraphQL types, and WebAPIs — with HotChocolate v13+ support. A Blazor frontend drives the whole thing, letting developers configure and run generation workflows visually.",
