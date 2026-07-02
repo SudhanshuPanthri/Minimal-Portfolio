@@ -33,7 +33,7 @@ export default function Works() {
                 <span className="work-card-cta">View project →</span>
               </div>
 
-              <div className="work-card-media">
+              <div className={`work-card-media ${project.orientation === "portrait" ? "portrait" : ""}`}>
                 {isImg(project.art) ? (
                   // eslint-disable-next-line @next/next/no-img-element
                   <img

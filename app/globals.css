@@ -938,6 +938,11 @@ img.art,
   inset: 0;
   transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
+/* Portrait screenshots on the home card: show the whole screen, centered */
+.work-card-media.portrait .media-img {
+  object-fit: contain;
+  object-position: center;
+}
 .work-card-link:hover .work-card-media .art {
   transform: scale(1.04);
 }
@@ -1036,6 +1041,20 @@ img.art,
 }
 .media-stage-lg {
   aspect-ratio: 16 / 9;
+}
+
+/* Portrait / mobile screenshots — show the full phone screen, no crop */
+.project-media.portrait .media-stage-lg {
+  aspect-ratio: 1280 / 2856;
+  max-width: 360px;
+  margin-inline: auto;
+}
+.project-media.portrait .media-thumbs {
+  justify-content: center;
+}
+.project-media.portrait .media-thumb {
+  width: 44px;
+  height: 96px;
 }
 .project-detail {
   display: grid;

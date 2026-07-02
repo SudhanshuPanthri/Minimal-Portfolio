@@ -9,7 +9,7 @@ export default function ProjectMedia({ project }: { project: Project }) {
   const [active, setActive] = useState(0);
 
   return (
-    <div className="project-media">
+    <div className={`project-media ${project.orientation === "portrait" ? "portrait" : ""}`}>
       <div className="media-stage media-stage-lg">
         {project.media.map((m, i) =>
           isImg(m) ? (

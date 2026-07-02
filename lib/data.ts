@@ -87,6 +87,7 @@ export type Project = {
   art: string; // css art class for primary media
   media: string[]; // css art classes for the thumbnail selector
   links: { label: string; href: string }[];
+  orientation?: "landscape" | "portrait"; // "portrait" for tall mobile screenshots
 };
 
 export const projects: Project[] = [
@@ -109,6 +110,7 @@ export const projects: Project[] = [
       { label: "Live ↗", href: "https://aahaar-site.pages.dev" },
       { label: "GitHub ↗", href: "https://github.com/SudhanshuPanthri/Aahaar" },
     ],
+    orientation: "portrait",
   },
   {
     id: "wealthlens",
