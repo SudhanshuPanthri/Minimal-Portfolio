@@ -91,6 +91,26 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: "aahaar",
+    title: "Aahaar",
+    year: "2026",
+    role: "Solo · Full-stack + AI",
+    description:
+      "A privacy-first calorie and macro tracker built for how India actually eats. Log meals in plain English, Hindi, or Hinglish — \"2 roti aur ek katori dal\" — and an AI pipeline extracts the foods and desi portions (katori, roti, glass), then computes nutrition from a local 287-food Indian database. Everything stays on-device in SQLite: no accounts, no cloud, account-free JSON backup, and offline parsing when the model can't be reached.",
+    tags: ["React Native", "Expo", "TypeScript", "SQLite / Drizzle", "Groq · Llama 3.3", "Cloudflare"],
+    art: "/projects/aahaar/log.png",
+    media: [
+      "/projects/aahaar/log.png",
+      "/projects/aahaar/calendar.png",
+      "/projects/aahaar/trends.png",
+      "/projects/aahaar/settings.png"
+    ],
+    links: [
+      { label: "Live ↗", href: "https://aahaar-site.pages.dev" },
+      { label: "GitHub ↗", href: "https://github.com/SudhanshuPanthri/Aahaar" },
+    ],
+  },
+  {
     id: "wealthlens",
     title: "WealthLens",
     year: "2026",
